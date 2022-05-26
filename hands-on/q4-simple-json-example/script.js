@@ -1,6 +1,5 @@
 //CREATE ELEMENT METHOD
-document.querySelector('#load-image-btn').addEventListener('click', function(){
-    async function run(){
+document.querySelector('#load-image-btn').addEventListener('click', async function(){
         //read from artwork.json for data
         let response = await axios.get('artwork.json');
         
@@ -19,6 +18,4 @@ document.querySelector('#load-image-btn').addEventListener('click', function(){
         //append h1+child under div
         divElement.appendChild(h1Element);
         divElement.appendChild(imgElement);
-    }
-    run();
-})
+    })
