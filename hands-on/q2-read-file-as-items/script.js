@@ -16,7 +16,7 @@ document.querySelector("#seeFruits").addEventListener("click", async function(){
 
     //loop thru array
     for (f of fruitsArr){
-        //create new li element for each item in array
+        //create new li element for each item in array in ul element
         let liElement = document.createElement("li");
         liElement.innerHTML = f;
         ulElement.appendChild(liElement)
