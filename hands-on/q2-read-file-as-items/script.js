@@ -25,3 +25,6 @@ document.querySelector("#seeFruits").addEventListener("click", async function(){
     //append fruits div
     fruitsDiv.appendChild(ulElement);
 })
+
+//mapping alternative
+
