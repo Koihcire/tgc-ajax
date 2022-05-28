@@ -4,9 +4,9 @@ document.querySelector("#btnLoad").addEventListener("click", async function(){
     let response = await axios.get(url);
     let responseData = response.data.results;
     //console.log(responseData);
-    for (let a in response.data.results){
+    for (let a in responseData){
         // console.log(response.data.results[a]);
-        let user = response.data.results[a];
+        let user = responseData[a];
 
         //create div element
         let divElement = document.createElement("div");
